@@ -1,0 +1,114 @@
+.middle {
+    padding: 50px 0;
+    position: relative;
+    background-color: hsl(237, 17%, 21%);
+    border-radius: 0 100px 0 100px;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.maskForCircles {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: 400px;
+    border-radius: 0 100px 0 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.front {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+.maskForCircles img {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    left: -200px;
+    top: -450px;
+}
+.middleInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.middleInfo > div:first-child {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.middleInfo > div:first-child img {
+    width: 100%;
+}
+.middleInfo > div:last-child h1  {
+    margin-bottom: 37px;
+}
+.middleInfo > div:last-child {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.middleInfo > div:last-child p {
+    opacity: 0.75;
+    width: 100%;
+    max-width: 543px;
+}
+@media (max-width: 800px) {
+
+    .middle {
+        height: 547px;
+        margin-top: 300px;  
+    }
+    .middleInfo {
+        flex-direction: column;
+    }
+    .middleInfo > div:first-child, .middleInfo > div:last-child {
+        width: 100%;
+    }
+    .middleInfo > div:last-child {
+        align-items: center; 
+    }
+    .middleInfo > div:first-child img {
+        width: 100%;
+        max-width: 490px;
+    }
+    .middleInfo > div:last-child p, .middleInfo > div:last-child h1 {
+        text-align: center;
+    }
+    .middleInfo {
+        position: relative;
+        top: -160px;
+    }
+    .maskForCircles {
+        height: 547px;
+    }
+    .maskForCircles img{
+        top: -420px;
+        left: -240px;
+        width: 1020px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

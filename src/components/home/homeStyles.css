@@ -1,0 +1,291 @@
+header {
+    background-image: linear-gradient(84.51deg, #FF8F70 6.11%, #FF3D54 90.4%);
+    color: var(--main-text-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 100px;
+    position: relative;
+}
+.hideThePattern {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 100px;
+}
+.homePattern {
+    position: absolute;
+    top: -1150px;
+    left: -630px;
+    width: 3000px;
+}
+.relative {
+    position: relative;
+}
+/*navbar*/
+header nav > ul li {
+    color: white;
+    opacity: 0.75;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+header nav * {
+    z-index: 4;
+}
+.boxLinks > ul {
+    display: flex;
+    margin-right: auto;
+    margin-left: 64px;
+}
+.boxLinks > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 28px;
+    cursor: pointer;
+}
+.boxLinks > ul > li:hover {
+    text-decoration: underline;
+}
+.boxLinks > ul > li  img {
+    margin-left: 8px;
+}
+.redColor {
+    display: none;
+}
+.whiteColor {
+    display: inline;
+}
+.boxLinks hr {
+    display: none;
+    margin: 48px 0;
+    background-color: #EFEFF1;
+    border: none;
+    height: 1px;
+}
+header button {
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.boxLinks {
+    width: 100%;
+    display: flex;
+}
+/*main*/
+header main {
+    padding: 139px 0 153px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header main * {
+    z-index: 2;
+}
+header main h1 {
+    font-size: 65px;
+    font-weight: 400;
+    text-align: center;
+}
+header main h2 {
+    font-size: 20px;
+    opacity: 0.75;
+    font-weight: 400;
+    text-align: center;
+}
+header main > :not(.homeButtons) {
+    margin-bottom: 34px;
+}
+/*header Buttons*/
+.navBarButtons button:first-child {
+    border: none;
+    background-color: transparent;
+    color: white;
+    opacity: 0.76;
+    margin-right: 30px;
+}
+.navBarButtons button:last-child, .homeButtons button:first-child, .homeButtons button:last-child:hover {
+    width: 138px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--light-red);
+    color: var(--light-red);
+    background-color: white;
+}
+.navBarButtons button:last-child:hover, .homeButtons button:first-child:hover {
+    background-color: #FF7B85;
+    border: none;
+    color: white;
+}
+.homeButtons button:last-child {
+    border: 1px solid;
+    color: white;
+    background-color: transparent;
+    width: 138px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 14px;
+}
+/*burger*/
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+.burger div {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+}
+/*dorp-down menu*/
+.dropDown {
+    position: relative;
+}
+.dropDown ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    left: -20px;
+    bottom: calc(-23px * 2 + -120px);
+    border-radius: 5px;
+    padding: 23px 62px 23px 23px;
+    -webkit-box-shadow: 0px 7px 18px 8px rgba(0,0,0,0.35); 
+    box-shadow: 0px 7px 18px 8px rgba(0,0,0,0.25);
+}
+.dropDown ul li {
+    color: black;
+    margin: 11px 0;
+    width: 90px;
+    list-style-type: none;
+}
+.dropDown ul li:hover {
+    font-weight: 700;
+}
+
+/*responsive design*/
+@media (max-width: 500px) {
+    header main h1 {
+        font-size: 32px;
+    }
+    header main h2 {
+        font-size: 17px;
+    }
+    header button {
+        font-size: 14px;
+    }
+    header nav {
+        margin-top: 49px;
+    }
+    .navBarButtons button:last-child, .homeButtons button:first-child, .homeButtons button:last-child, .homeButtons button:last-child:hover {
+        width: 119px;
+        height: 42px;
+    }
+    .logo {
+        width: 85px;
+    }
+    .homePattern {
+        position: absolute;
+        top: -290px;
+        left: -400px;
+        width: 1450px;
+    }
+    .boxLinks {
+        display: none;
+    }
+    
+}
+@media (max-width: 779px) {
+    header nav {
+        position: relative;
+    }
+    .burger {
+        display: flex;
+    }
+    .redColor {
+        display: inline;
+    }
+    .whiteColor {
+        display: none;
+    }
+    .boxLinks {
+        display: none;
+        flex-direction: column;
+        color: #000;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 100px 20px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 7px 18px 8px rgba(0,0,0,0.35); 
+        box-shadow: 0px 7px 18px 8px rgba(0,0,0,0.25);
+    }
+    .boxLinks hr {
+        display: block;
+    }
+    .navBarButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBarButtons button {
+        font-size: 36px; 
+    }
+    .navBarButtons button:first-child {
+        width: 274px;
+        height: 96px;
+        margin: 0;
+        color: black;
+    }
+    .navBarButtons button:last-child {
+        width: 100%;
+        max-width: 274px;
+        height: 96px;
+        margin: 0;
+        color: white;
+        border-radius: 50px;
+        background-image: linear-gradient(84.51deg, #FF8F70 6.11%, #FF3D54 90.4%);
+    }
+    .boxLinks > ul {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    .boxLinks > ul > li {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        margin: 24px 0;
+        font-size: 36px;
+    }
+    .dropDown {
+        flex-direction: column;
+    }
+    .dropDown ul {
+        justify-content: center;
+        padding: 0;
+        position: relative;
+        left: 0;
+        bottom: -24px;
+        box-shadow: none;
+        background-color: #EFEFF1;
+        width: 100%;
+    }
+    .dropDown ul li {
+        text-align: center;
+        width: auto;
+        margin: 24px 0;
+    }
+}
