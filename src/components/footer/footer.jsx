@@ -45,7 +45,7 @@ class Footer extends React.Component {
                             <h3>Connect</h3>
                             <ul>
                                 <li>Contact</li>
-                                <li>Newsletterr</li>
+                                <li>Newsletter</li>
                                 <li>LinkedIn</li>
                             </ul>
                         </div>

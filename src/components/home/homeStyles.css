@@ -18,8 +18,8 @@ header {
 }
 .homePattern {
     position: absolute;
-    top: -1150px;
-    left: -630px;
+    top: -1250px;
+    left: -540px;
     width: 3000px;
 }
 .relative {
@@ -50,9 +50,6 @@ header nav * {
     align-items: center;
     margin-right: 28px;
     cursor: pointer;
-}
-.boxLinks > ul > li:hover {
-    text-decoration: underline;
 }
 .boxLinks > ul > li  img {
     margin-left: 8px;
@@ -168,8 +165,12 @@ header main > :not(.homeButtons) {
     width: 90px;
     list-style-type: none;
 }
-.dropDown ul li:hover {
+.nested > li:hover {
     font-weight: 700;
+    text-decoration: none !important;
+}
+.mainUl > li:hover {
+    text-decoration: underline;
 }
 
 /*responsive design*/
@@ -205,6 +206,12 @@ header main > :not(.homeButtons) {
     
 }
 @media (max-width: 779px) {
+    .homePattern {
+        position: absolute;
+        top: -290px;
+        left: -400px;
+        width: 1850px;
+    }
     header nav {
         position: relative;
     }
@@ -266,7 +273,7 @@ header main > :not(.homeButtons) {
         margin-right: 0;
         text-align: center;
         width: 100%;
-        flex-direction: column;
+        justify-content: center;
         margin: 24px 0;
         font-size: 36px;
     }
@@ -288,4 +295,5 @@ header main > :not(.homeButtons) {
         width: auto;
         margin: 24px 0;
     }
+    
 }

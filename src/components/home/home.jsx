@@ -55,7 +55,7 @@ class Home extends React.Component {
         this.navRef = React.createRef();
 
         this.state = {
-            isDropDownMenuClosed: true,
+            isDropDownMenuClosed: false,
             isBurgerMenuClosed: true,
             desktopView: true
         }
@@ -102,7 +102,7 @@ class Home extends React.Component {
                             <div className="boxLinks" 
                             style={{display: this.state.desktopView === true ? 'flex' : 'none'}}
                             >
-                                <ul>
+                                <ul className='mainUl'>
                                     <li>
                                         <p>Product <span>
                                             <img className='whiteColor'  src={arrowLight} alt="" />
@@ -110,10 +110,11 @@ class Home extends React.Component {
                                         </span></p>
                                     </li>
                                     <li>
-                                        <p>Company<span>
+                                        <p>Company</p>
+                                        <div>
                                             <img className='whiteColor' src={arrowLight} alt="" />
                                             <img className='redColor' src={arrowDark} alt="" />
-                                        </span></p>
+                                        </div>
                                     </li>
                                     <li className='dropDown' 
                                     onMouseOver={ () => {
@@ -138,7 +139,7 @@ class Home extends React.Component {
                                         </span></p>
                                         
 
-                                        <ul style={{display: this.state.isDropDownMenuClosed === true ? 'none' : 'flex'}}>
+                                        <ul className='nested' style={{display: this.state.isDropDownMenuClosed === true ? 'none' : 'flex'}}>
                                             <li>Contact</li>
                                             <li>Newsletter</li>
                                             <li>LinkedIn</li>
@@ -182,8 +183,10 @@ class Home extends React.Component {
                                 <button>Learn More</button>
                             </div>
                         </main>
-                        <div className="hideThePattern">
-                            <img className='homePattern' src={homePattern} alt="" />
+                        <div className="hideThePattern centerSections">
+                            <div className="pageContainer makeRelative">
+                                <img className='homePattern' src={homePattern} alt="" />
+                            </div>
                         </div>
                     </div>
 
