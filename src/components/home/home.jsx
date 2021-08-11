@@ -98,7 +98,7 @@ class Home extends React.Component {
                 <header ref={this.navRef}>
                     <div className="pageContainer">
                         <nav >
-                            <img role="banner"  src={logo} alt="" className="logo" />
+                            <img src={logo} alt="" className="logo" />
                             <div className="boxLinks" 
                             style={{display: this.state.desktopView === true ? 'flex' : 'none'}}
                             >
