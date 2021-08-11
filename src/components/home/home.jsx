@@ -55,7 +55,7 @@ class Home extends React.Component {
         this.navRef = React.createRef();
 
         this.state = {
-            isDropDownMenuClosed: false,
+            isDropDownMenuClosed: true,
             isBurgerMenuClosed: true,
             desktopView: true
         }
