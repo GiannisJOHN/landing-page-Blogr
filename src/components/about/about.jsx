@@ -20,7 +20,7 @@ class About extends React.Component {
     render() {
         return (
             <>
-                <section className='about centerSections'>
+                <section aria-label='info about the web site' className='about centerSections'>
                     <div className="pageContainer">
                         <h1 className='bigHeading' >Designed for the future</h1>
                         <div className="aboutInfo">

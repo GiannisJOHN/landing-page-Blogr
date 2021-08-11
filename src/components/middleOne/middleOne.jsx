@@ -22,7 +22,7 @@ class MiddleOne extends React.Component {
     render() {
         return (
             <>
-                <section className="middle centerSections">
+                <section aria-label='company mentality' className="middle centerSections">
                     <div className="pageContainer front">
                         <div className="middleInfo">
                             <div>

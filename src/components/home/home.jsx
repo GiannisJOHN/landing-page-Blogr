@@ -98,7 +98,7 @@ class Home extends React.Component {
                 <header ref={this.navRef}>
                     <div className="pageContainer">
                         <nav >
-                            <img src={logo} alt="" className="logo" />
+                            <img role="banner"  src={logo} alt="" className="logo" />
                             <div className="boxLinks" 
                             style={{display: this.state.desktopView === true ? 'flex' : 'none'}}
                             >
@@ -152,7 +152,7 @@ class Home extends React.Component {
                                     <button>Sign Up</button>
                                 </div>
                             </div>
-                            <div className="burger" onClick={
+                            <button aria-label='menu' className="burger" onClick={
                                () => {
                                    this.setState(
                                        {
@@ -173,16 +173,16 @@ class Home extends React.Component {
                                 <div style={
                                     this.state.isBurgerMenuClosed === true ? styleThirdDefault : styleThirdAnime
                                 }></div>
-                            </div>
+                            </button>
                         </nav>
-                        <main>
+                        <div className='action'>
                             <h1>A modern publishing platform</h1>
                             <h2>Grow your audience and build your online brand</h2>
                             <div className="homeButtons">
                                 <button>Start For Free</button>
                                 <button>Learn More</button>
                             </div>
-                        </main>
+                        </div>
                         <div className="hideThePattern centerSections">
                             <div className="pageContainer makeRelative">
                                 <img className='homePattern' src={homePattern} alt="" />

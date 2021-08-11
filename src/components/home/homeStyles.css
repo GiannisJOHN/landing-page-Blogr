@@ -76,28 +76,28 @@ header button {
     width: 100%;
     display: flex;
 }
-/*main*/
-header main {
+/*.action*/
+header .action {
     padding: 139px 0 153px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-header main * {
+header .action * {
     z-index: 2;
 }
-header main h1 {
+header .action h1 {
     font-size: 65px;
     font-weight: 400;
     text-align: center;
 }
-header main h2 {
+header .action h2 {
     font-size: 20px;
     opacity: 0.75;
     font-weight: 400;
     text-align: center;
 }
-header main > :not(.homeButtons) {
+header .action > :not(.homeButtons) {
     margin-bottom: 34px;
 }
 /*header Buttons*/
@@ -136,6 +136,8 @@ header main > :not(.homeButtons) {
     flex-direction: column;
     cursor: pointer;
     display: none;
+    background-color: transparent;
+    border: none;
 }
 .burger div {
     width: 40px;
@@ -169,16 +171,16 @@ header main > :not(.homeButtons) {
     font-weight: 700;
     text-decoration: none !important;
 }
-.mainUl > li:hover {
+..actionUl > li:hover {
     text-decoration: underline;
 }
 
 /*responsive design*/
 @media (max-width: 500px) {
-    header main h1 {
+    header .action h1 {
         font-size: 32px;
     }
-    header main h2 {
+    header .action h2 {
         font-size: 17px;
     }
     header button {

@@ -17,7 +17,7 @@ class Product extends React.Component {
     render() {
         return (
             <>
-              <section className="product centerSections">
+              <section aria-label='product information' className="product centerSections">
                   <div className="pageContainer">
                       <div className="productInfo">
                           <div>
