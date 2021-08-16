@@ -13,6 +13,6 @@ i focus on responsiveness of a site and recently i gave my best to upgrade my a1
 4. flexbox
 
 ### DESIGN COMPARISON [HERE](https://www.frontendmentor.io/solutions/blogr-landing-page-using-reactjs-UcbW4pvBk)
-### LIVE PREVIEW [HERE](mentesidis-blogr.netlify.app)
+### LIVE PREVIEW [HERE](https://www.mentesidis-blogr.netlify.app)
 
 
