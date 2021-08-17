@@ -47,6 +47,7 @@
 }
 .middleInfo > div:last-child h1  {
     margin-bottom: 37px;
+    font-weight: 500;
 }
 .middleInfo > div:last-child {
     width: 50%;
@@ -59,6 +60,7 @@
     opacity: 0.75;
     width: 100%;
     max-width: 543px;
+    font-weight: 500;
 }
 @media (max-width: 800px) {
 

@@ -88,14 +88,16 @@ header .action * {
 }
 header .action h1 {
     font-size: 65px;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
+    font-family: 'Overpass', sans-serif;
 }
 header .action h2 {
     font-size: 20px;
     opacity: 0.75;
-    font-weight: 400;
-    text-align: center;
+    font-weight: 300;
+    text-align: center;    
+    font-family: 'Overpass', sans-serif;
 }
 header .action > :not(.homeButtons) {
     margin-bottom: 34px;
@@ -171,7 +173,7 @@ header .action > :not(.homeButtons) {
     font-weight: 700;
     text-decoration: none !important;
 }
-..actionUl > li:hover {
+.actionUl > li:hover {
     text-decoration: underline;
 }
 
