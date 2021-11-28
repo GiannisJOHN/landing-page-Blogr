@@ -261,8 +261,8 @@ header .action > :not(.homeButtons) {
     }
     .navBarButtons button:last-child {
         width: 100%;
-        max-width: 274px;
-        height: 96px;
+        max-width: 210px;
+        height: 65px;
         margin: 0;
         color: white;
         border-radius: 50px;

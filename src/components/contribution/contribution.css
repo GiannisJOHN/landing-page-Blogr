@@ -1,0 +1,19 @@
+.contribution {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+}
+.contribution p {
+    color: #4f4f4f;
+    line-height: 150%;
+}
+.contribution a {
+    font-weight: bold;
+    color: #1266f1;
+    text-decoration: none;
+}
+.contribution a:hover {
+    color: #0e52c1;
+}
